@@ -17,18 +17,6 @@ public class ExpenseTO {
 	public ExpenseTO() {		
 	}
 
-	public ExpenseTO(ExpenseTypes expenseType, Double expenseAmount) {
-		this.expenseType = expenseType;
-		this.expenseAmount = expenseAmount;
-	}
-	
-	public ExpenseTO(String expenseId, ExpenseTypes expenseType, Double expenseAmount) {
-		this.expenseId = expenseId;
-		this.expenseType = expenseType;
-		this.expenseAmount = expenseAmount;
-	}
-
-
 	public ExpenseTypes getExpenseType() {
 		return expenseType;
 	}

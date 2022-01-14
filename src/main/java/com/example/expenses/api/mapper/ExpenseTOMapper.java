@@ -20,7 +20,7 @@ public class ExpenseTOMapper implements IExpenseTOMapper {
 	@Override
 	public ExpenseTO map(Expense expense) {
 		ExpenseTO expenseTO = new ExpenseTO();
-		expense.setExpenseId(expense.getExpenseId());
+		expenseTO.setExpenseId(expense.getExpenseId());
 		expenseTO.setExpenseType(expense.getExpenseType());
 		expenseTO.setExpenseAmount(expense.getExpenseAmount());
 		expenseTO.setExpenseDate(expense.getExpenseDate());		
