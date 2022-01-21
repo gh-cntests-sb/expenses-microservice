@@ -14,6 +14,7 @@ public class ExpenseTOMapper implements IExpenseTOMapper {
 		expense.setExpenseType(expenseTO.getExpenseType());
 		expense.setExpenseAmount(expenseTO.getExpenseAmount());
 		expense.setExpenseDate(expenseTO.getExpenseDate());
+		expense.setExpenseDescription(expenseTO.getExpenseDescription());
 		return expense;
 	}
 	
@@ -23,7 +24,8 @@ public class ExpenseTOMapper implements IExpenseTOMapper {
 		expenseTO.setExpenseId(expense.getExpenseId());
 		expenseTO.setExpenseType(expense.getExpenseType());
 		expenseTO.setExpenseAmount(expense.getExpenseAmount());
-		expenseTO.setExpenseDate(expense.getExpenseDate());		
+		expenseTO.setExpenseDate(expense.getExpenseDate());
+		expenseTO.setExpenseDescription(expense.getExpenseDescription());		
 		return expenseTO;
 	}
 }

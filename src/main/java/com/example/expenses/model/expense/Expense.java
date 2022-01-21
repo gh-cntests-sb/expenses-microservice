@@ -26,6 +26,9 @@ public class Expense {
 	@Column(name= "EXPENSE_AMOUNT")
 	private Double expenseAmount;
 	
+	@Column(name= "EXPENSE_DESCRIPTION")
+	private String expenseDescription;
+	
 	@Column(name = "EXPENSE_DATE")
 	private Date expenseDate;
 
@@ -73,4 +76,12 @@ public class Expense {
 		this.expenseCreationDate = expenseCreationDate;
 	}
 
+	public String getExpenseDescription() {
+		return expenseDescription;
+	}
+
+	public void setExpenseDescription(String expenseDescription) {
+		this.expenseDescription = expenseDescription;
+	}
+	
 }

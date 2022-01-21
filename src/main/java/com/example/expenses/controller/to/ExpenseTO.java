@@ -12,6 +12,8 @@ public class ExpenseTO {
 	
 	private Double expenseAmount;
 
+	private String expenseDescription;
+	
 	private Date expenseDate;
 
 	public ExpenseTO() {		
@@ -47,6 +49,14 @@ public class ExpenseTO {
 
 	public void setExpenseDate(Date expenseDate) {
 		this.expenseDate = expenseDate;
+	}
+
+	public String getExpenseDescription() {
+		return expenseDescription;
+	}
+
+	public void setExpenseDescription(String expenseDescription) {
+		this.expenseDescription = expenseDescription;
 	}
 	
 }
