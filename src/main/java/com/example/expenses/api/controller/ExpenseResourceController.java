@@ -42,7 +42,7 @@ public class ExpenseResourceController {
 		return expenseTOMapper.map(rExpense);
 	}
 
-	@GetMapping
+	@GetMapping("/{id}")
 	public ExpenseTO getExpense(@PathVariable String id) {
 		
 		logger.info("expense id: {id})",id);
